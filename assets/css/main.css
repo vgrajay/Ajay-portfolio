@@ -33,6 +33,16 @@ body {
 	line-height: 1;
 }
 
+.profile-img {
+  width: 100px;     /* smaller size */
+  height: 100px;
+  object-fit: cover;
+
+  border-radius: 20px;   /* small rounded edges */
+}
+
+
+
 ol, ul {
 	list-style: none;
 }

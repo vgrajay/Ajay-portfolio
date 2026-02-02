@@ -1,312 +1,458 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title class="t1">Ajay Vibhas V G R | Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+    <head>
+        <title class="t1">Ajay Vibhas V G R | Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="assets/css/main.css" />
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Custom styles (your styles + nav + form status) -->
+        <style>
+            h1 {
+                font-size: 200%;
+            }
+            .center-text {
+                text-align: center;
+            }
 
-				<!-- Intro -->
-				<section class="intro">
-					<header>
-						<h1 class="h1">Ajay Vibhas V G R - Aspiring Software Developer</h1>
-						<p> <a href="https://instagram.com/vgrajay">@vgrajay</a> / <a href="https://github.com/vgrajay">github</a></p>
-						<ul class="actions">
-							<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-						</ul>
-					</header>
-					<div class="content">
-						<span class="image fill" data-position="center">
-							<img src="images/gallery/vgrajay.png" alt="Description of image" class="responsive-image" />
-						</span>
-					</div>
-				</section>
-				
-				<!-- Section -->
-					<section id="first">
-						<header>
-							<h2>profile details</h2>
-						</header>
-						<div class="content">
-							<p>I am
-  							<strong> AJAY VIBHAS V G R,</strong> a 
-  							<strong>Computer Science Engineering</strong> graduated from
-  							<strong>SRM TRP Engineering College</strong>, Trichy–Irungalur, batch of 2025.
-							</p>
+            .intro .content .image img {
+                width: 80%;
+                height: auto;
+                padding: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
 
+            @media (min-width: 768px) {
+                .intro .content .image img {
+                    width: 70%;
+                    padding: 110px;
+                    margin-left: 100px;
+                }
+            }
 
-							<span class="image main"><img src="images/vgrajay.jpg" alt="" /></span>
-						</div>
-					</section>
+            @media (max-width: 767px) {
+                .intro .content .image img {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>projects</h2>
-						</header>
-						<div class="content">
-							<p><strong>Finished Projects </strong>  </p>
-							<ul>
-								<li><a href="">Fishermen Rescue App</a></li>
-								<li>cvd prediction</li>
-							</ul>
-							<ul class="feature-icons">
-								
-							</ul>
-							<p></p>
-						</div>
-					</section>
+            /* Nav styles */
+            .site-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 9999;
+                background: rgba(73, 252, 212, 0.95);
+                backdrop-filter: blur(6px);
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+                font-family: Raleway, Helvetica, sans-serif;
+            }
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>fishermen rescue app</h2>
-						</header>
-						<div class="content">
-							<p>This app help fisher-men to alert when they cross border and they alredy cross the border accidentally then the alert given to respective nation army and alert them to rescue the fishermen . this will <strong>reduce the ratio of fishermen die due to killed by another Nation army</strong> <strong></strong></p>
+            .site-nav-inner {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0.6rem 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3></h3>
-										<p> </p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/fisher-men.drawio.png" class="landscape">
-												<img src="images/gallery/thumbs/fisher-men.drawio.png" alt="Fishermen Drawing" style="width: 100%; height: auto;" />
-											</a>
-											<div style="width: 100%; text-align: center;">
-												<p><strong>Archistructure</strong></p>
-											<!-- </div>
-											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-										</div> -->
-									</div>
-								</section>
-						</div>
-					</section>
+            .site-nav-brand {
+                font-weight: 700;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                font-size: 0.9rem;
+            }
 
-					<section>
-						<header>
-							<h2>cvd prediction</h2>
-						</header>
-						<div class="content">
-							<p>This web application help predict heart disease early and help to take treatment, This help to <strong>reduce the death ration due to heart issue</strong> </p>
+            .site-nav-brand a {
+                text-decoration: none;
+                color: #000;
+                border-bottom: none;
+            }
 
-							<!-- Section -->
-								<section>
-									<header>
-										<h3></h3>
-										<p> </p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images\gallery\thumbs\cvd-Archistructure.png" class="landscape">
-												<img src="images\gallery\thumbs\cvd-Archistructure.png" alt="cvd" style="width: 100%; height: auto;" />
-											</a>
-											<div style="width: 100%; text-align: center;">
-												<p><strong>Archistructure</strong></p>
-											<!-- </div>
-											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-										</div> -->
-									</div>
-								</section>
+            .site-nav-links {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+            }
 
-								
+            .site-nav-links li a {
+                text-decoration: none;
+                color: #000;
+                font-size: 0.8rem;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                border-bottom: none;
+            }
 
-						</div>
-					</section>
+            .site-nav-links li a:hover {
+                color: #008c7a;
+            }
 
-				<!-- Section -->
-				<section>
-					<header>
-						<h2>DECODERS</h2>
-					</header>
-					<div class="content">
-						<p><strong>DECODERS</strong> Our team is committed to collaborating on all projects.</p>
-						<ul class="actions">
-							<li><a href="#" class="button primary large" onclick="toggleDetails(event)">TEAM DETAILS</a></li>
-							<li><a href="https://vgrajay.github.io/Decoders/" class="button large">LEARM MORE</a></li>
-						</ul>
-						
-						<!-- Hidden team details section -->
-						<div id="teamDetails" style="display: none; margin-top: 10px;">
-							<p><strong>Team Members:</strong></p>
-							<ul>
-								<li>Member 1 - Ajay Vibhas R</li>
-								<li>Member 2 - Durga Devi R</li>
-								<li>Member 3 - Pradhoshika D</li>
-								<li>Member 4 - Dharshi Priya</li>
-								<li><a href="https://vgrajay.github.io/Decoders/" class="button large">Team-Site</a></li>
-							</ul>
-							<p>Our team is dedicated to delivering high-quality work on all projects we undertake.</p>
-						</div>
-					</div>
-				</section>
-				
-				<script>
-					function toggleDetails(event) {
-						event.preventDefault(); // Prevents the jump to the top
-						var details = document.getElementById("teamDetails");
-						if (details.style.display === "none") {
-							details.style.display = "block";
-						} else {
-							details.style.display = "none";
-						}
-					}
-				</script>
-				
+            section[id] {
+                scroll-margin-top: 70px;
+            }
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-						<div class="content">
-							<p><strong>contact by </strong> Kindly refer to the steps below and reach out via email for feedback or any questions</p>
-							<form action="https://api.web3forms.com/submit" method="POST" class="contact">
-								<input type="hidden" name="access_key" value="aa831cd5-f569-4a38-85a0-3ef9b13566f9">
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form>
-						</div>
-						<footer>
-							<ul class="items">
-								<li>
-									<!-- <ul> -->
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:vgrajay@gmail.com">vgrajay@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<a href="tel:+91 9944121522">+91 9944121522</a>
-										</li>
-									<!-- </ul> -->
-									
-								<li>
-									<h3>Address</h3>
-									<span>Thambikkottai Keelakkadu <strong>No:33</strong> Thiruvarur(dt) - <strong>614704</strong> Muthupet (tk) <strong>Tamil Nadu</strong></span>
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-					
-										<li><a href="https://www.facebook.com/vgrajay" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="https://www.instagram.com/vgrajay" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://www.linkedin.com/in/ajayvibhas-ravichandran-6baa7726a" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://www.github.com/vgrajay" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="https://wa.me/9944121522"class="icon brands fa-whatsapp"><span class="label">whatsapp</span> </a></li>
-										<li><a href="tel:+919944121522" class="icon"><i class="fas fa-phone"></i></a></li>
-										<li><a href=""></a></li>
-			
-								</li>
-							</ul>
-						</footer>
-					</section>
+            .site-nav-toggle {
+                display: none;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
 
-				<!-- Copyright -->
-				<div style="font-size: 20px; color: black; text-align: center; padding-top: 10%;">
-					&copy; Untitled. All rights reserved. Design: 
-					<a href="https://instagram.com/vgrajay" style="color: black; text-decoration: none; font-weight: bold;">vgrajay</a>
-				</div>
+            @media (max-width: 768px) {
+                .site-nav-inner {
+                    padding: 0.6rem 1rem;
+                }
 
-			</div>
+                .site-nav-links {
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    left: 0;
+                    background: rgba(73, 252, 212, 0.98);
+                    flex-direction: column;
+                    gap: 0;
+                    display: none;
+                }
 
-		<!-- Scripts -->
-			<!-- <script>document.addEventListener('contextmenu', event => event.preventDefault());</script> -->
+                .site-nav-links li {
+                    padding: 0.6rem 1rem;
+                    border-top: 1px solid rgba(0, 0, 0, 0.06);
+                }
 
-			<script>
-  document.onkeydown = function(e) {
-    // Disable F12
-    if (e.key === "F12" || e.keyCode === 123) {
-      return false;
-    }
-    // Disable Ctrl+Shift+I
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') {
-      return false;
-    }
-    // Disable Ctrl+Shift+J
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'j') {
-      return false;
-    }
-    // Disable Ctrl+U
-    if (e.ctrlKey && e.key.toLowerCase() === 'u') {
-      return false;
-    }
-    // Disable Ctrl+Shift+C
-    if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'c') {
-      return false;
-    }
-  };
-</script>
+                .site-nav-links.show {
+                    display: flex;
+                }
 
+                .site-nav-toggle {
+                    display: block;
+                }
+            }
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            #wrapper {
+                padding-top: 3.5rem;
+            }
 
-	</body>
+            /* Contact status text */
+            #contactStatus {
+                display: none;
+                color: green;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Nav -->
+        <nav class="site-nav">
+            <div class="site-nav-inner">
+                <div class="site-nav-brand">
+                    <a href="#top">Ajay Vibhas V G R</a>
+                </div>
+                <div class="site-nav-toggle" onclick="toggleNavMenu()">☰</div>
+                <ul class="site-nav-links" id="siteNavLinks">
+                    <li><a href="#first">Profile</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#fishermen">Fishermen App</a></li>
+                    <li><a href="#cvd">CVD Prediction</a></li> -->
+                    <li><a href="#decoders">Decoders</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Intro -->
+            <section class="intro" id="top">
+                <header>
+                    <h1 class="h1">Ajay Vibhas V G R - Aspiring Software Developer</h1>
+                    <p><a href="https://instagram.com/vgrajay">@vgrajay</a> / <a href="https://github.com/vgrajay">github</a></p>
+                    <ul class="actions">
+                        <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+                    </ul>
+                </header>
+                <div class="content">
+                    <span class="image fill" data-position="center">
+                        <img src="images/gallery/vgrajay.png" alt="Description of image" class="responsive-image" />
+                    </span>
+                </div>
+            </section>
+            
+            <!-- Section -->
+            <section id="first">
+                <header>
+                    <h2>profile details</h2>
+                </header>
+                <div class="content">
+                    <p>I am
+                    <strong> AJAY VIBHAS V G R,</strong> a 
+                    <strong>Computer Science Engineering</strong> graduated from
+                    <strong>SRM TRP Engineering College</strong>, Trichy–Irungalur, batch of 2025.
+                    </p>
+
+                    <span class="image main"><img src="images/vgrajay.jpg" alt="" /></span>
+                </div>
+            </section>
+
+            <!-- Section -->
+            <section id="projects">
+                <header>
+                    <h2>projects</h2>
+                </header>
+                <div class="content">
+                    <p><strong>Finished Projects </strong></p>
+                    <ul>
+                        <li><a href="#fishermen">Fishermen Rescue App</a></li>
+                        <li><a href="#cvd">cvd prediction</a></li>
+                    </ul>
+                    <ul class="feature-icons">
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section -->
+            <section id="fishermen">
+                <header>
+                    <h2>fishermen rescue app</h2>
+                </header>
+                <div class="content">
+                    <p>This app help fisher-men to alert when they cross border and they alredy cross the border accidentally then the alert given to respective nation army and alert them to rescue the fishermen. This will <strong>reduce the ratio of fishermen die due to killed by another Nation army</strong>.</p>
+
+                    <section>
+                        <header>
+                            <h3></h3>
+                            <p></p>
+                        </header>
+                        <div class="content">
+                            <div class="gallery">
+                                <a href="images/gallery/fulls/fisher-men.drawio.png" class="landscape">
+                                    <img src="images/gallery/thumbs/fisher-men.drawio.png" alt="Fishermen Drawing" style="width: 100%; height: auto;" />
+                                </a>
+                                <div style="width: 100%; text-align: center;">
+                                    <p><strong>Archistructure</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section id="cvd">
+                <header>
+                    <h2>cvd prediction</h2>
+                </header>
+                <div class="content">
+                    <p>This web application help predict heart disease early and help to take treatment, This help to <strong>reduce the death ration due to heart issue</strong>.</p>
+
+                    <section>
+                        <header>
+                            <h3></h3>
+                            <p></p>
+                        </header>
+                        <div class="content">
+                            <div class="gallery">
+                                <a href="images/gallery/thumbs/cvd-Archistructure.png" class="landscape">
+                                    <img src="images/gallery/thumbs/cvd-Archistructure.png" alt="cvd" style="width: 100%; height: auto;" />
+                                </a>
+                                <div style="width: 100%; text-align: center;">
+                                    <p><strong>Archistructure</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <!-- Section -->
+            <section id="decoders">
+                <header>
+                    <h2>DECODERS</h2>
+                </header>
+                <div class="content">
+                    <p><strong>DECODERS</strong> Our team is committed to collaborating on all projects.</p>
+                    <ul class="actions">
+                        <li><a href="#" class="button primary large" onclick="toggleDetails(event)">TEAM DETAILS</a></li>
+                        <li><a href="https://vgrajay.github.io/Decoders/" class="button large">LEARM MORE</a></li>
+                    </ul>
+                    
+                    <div id="teamDetails" style="display: none; margin-top: 10px;">
+                        <p><strong>Team Members:</strong></p>
+                        <ul>
+                            <li>Member 1 - Ajay Vibhas R</li>
+                            <li>Member 2 - Durga Devi R</li>
+                            <li>Member 3 - Pradhoshika D</li>
+                            <li>Member 4 - Dharshi Priya</li>
+                            <li><a href="https://vgrajay.github.io/Decoders/" class="button large">Team-Site</a></li>
+                        </ul>
+                        <p>Our team is dedicated to delivering high-quality work on all projects we undertake.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <header>
+                    <h2>Get in touch</h2>
+                </header>
+                <div class="content">
+                    <p><strong>contact by </strong> Kindly refer to the steps below and reach out via email for feedback or any questions</p>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact" id="contactForm">
+                        <input type="hidden" name="access_key" value="aa831cd5-f569-4a38-85a0-3ef9b13566f9">
+                        <div class="fields">
+                            <div class="field half">
+                                <input type="text" name="name" id="name" placeholder="Name" />
+                            </div>
+                            <div class="field half">
+                                <input type="email" name="email" id="email" placeholder="Email" />
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" class="button primary" /></li>
+                        </ul>
+                    </form>
+
+                    <!-- Status message -->
+                    <p id="contactStatus">Message sent!</p>
+                </div>
+                <footer>
+                    <ul class="items">
+                        <li>
+                            <h3>Email</h3>
+                            <a href="mailto:vgrajay@gmail.com">vgrajay@gmail.com</a>
+                        </li>
+                        <li>
+                            <h3>Phone</h3>
+                            <a href="tel:+91 9944121522">+91 9944121522</a>
+                        </li>
+                        <li>
+                            <h3>Address</h3>
+                            <span>Thambikkottai Keelakkadu <strong>No:33</strong> Thiruvarur(dt) - <strong>614704</strong> Muthupet (tk) <strong>Tamil Nadu</strong></span>
+                        </li>
+                        <li>
+                            <h3>Elsewhere</h3>
+                            <ul class="icons">
+                                <li><a href="https://www.facebook.com/vgrajay" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                <li><a href="https://www.instagram.com/vgrajay" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="https://www.linkedin.com/in/ajayvibhas-ravichandran-6baa7726a" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="https://www.github.com/vgrajay" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                                <li><a href="https://wa.me/9944121522" class="icon brands fa-whatsapp"><span class="label">whatsapp</span></a></li>
+                                <li><a href="tel:+919944121522" class="icon"><i class="fas fa-phone"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </footer>
+            </section>
+
+            <!-- Copyright -->
+            <div style="font-size: 20px; color: black; text-align: center; padding-top: 10%;">
+                &copy; Untitled. All rights reserved. Design: 
+                <a href="https://instagram.com/vgrajay" style="color: black; text-decoration: none; font-weight: bold;">vgrajay</a>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script>
+            function toggleDetails(event) {
+                event.preventDefault();
+                var details = document.getElementById("teamDetails");
+                if (details.style.display === "none" || details.style.display === "") {
+                    details.style.display = "block";
+                } else {
+                    details.style.display = "none";
+                }
+            }
+
+            function toggleNavMenu() {
+                var links = document.getElementById("siteNavLinks");
+                if (links.classList.contains("show")) {
+                    links.classList.remove("show");
+                } else {
+                    links.classList.add("show");
+                }
+            }
+
+            // Contact form handler: show message 1s, clear form, stay on page
+            document.addEventListener('DOMContentLoaded', function () {
+                const contactForm = document.getElementById('contactForm');
+                const contactStatus = document.getElementById('contactStatus');
+
+                if (contactForm && contactStatus) {
+                    contactStatus.style.display = 'none';
+
+                    contactForm.addEventListener('submit', function (e) {
+                        e.preventDefault();
+
+                        const formData = new FormData(contactForm);
+
+                        fetch(contactForm.action, {
+                            method: 'POST',
+                            body: formData
+                        })
+                        .then(response => {
+                            contactStatus.textContent = 'Message sent!';
+                            contactStatus.style.color = 'green';
+                            contactStatus.style.display = 'block';
+                            contactForm.reset();
+
+                            setTimeout(() => {
+                                contactStatus.style.display = 'none';
+                            }, 2000);
+                        })
+                        .catch(error => {
+                            contactStatus.textContent = 'Something went wrong. Please try again.';
+                            contactStatus.style.color = 'red';
+                            contactStatus.style.display = 'block';
+
+                            setTimeout(() => {
+                                contactStatus.style.display = 'none';
+                                contactStatus.style.color = 'green';
+                                contactStatus.textContent = 'Message sent!';
+                            }, 3000);
+                        });
+                    });
+                }
+            });
+
+            document.onkeydown = function(e) {
+                if (e.key === "F12" || e.keyCode === 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i') {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'j') {
+                    return false;
+                }
+                if (e.ctrlKey && e.key.toLowerCase() === 'u') {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'c') {
+                    return false;
+                }
+            };
+        </script>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
-
-<style>
-	h1 {
-            font-size: 200%;
-        }
-	.center-text {
-    text-align: center;
-}
-
-.intro .content .image img {
-	width: 100%; /* Adjusts image width to container */
-	height: auto; /* Maintains aspect ratio */
-	padding: 20px; /* Adjust padding for a cleaner look */
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-}
-
-/* For larger screens */
-@media (min-width: 768px) {
-	.intro .content .image img {
-		width: 90%; /* Adjust width on larger screens */
-		padding: 100px;
-		margin-left: 50px;
-	}
-}
-
-/* For smaller screens */
-@media (max-width: 767px) {
-	.intro .content .image img {
-		width: 100%; /* Full width for small screens */
-		padding: 10px;
-	}
-}
-
-</style>
